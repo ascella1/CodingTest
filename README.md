@@ -9,3 +9,4 @@ CodingTest
 파이썬에선 dictionary 와 set 을 가지고 있다.
 set 은 주로 중복값을 제거할때 사용하였고, 자주 사용하는것은 dictionary 인 듯 하다.
 
+시간을 정해놓고 풀기 
