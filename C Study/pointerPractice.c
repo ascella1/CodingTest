@@ -9,7 +9,7 @@ int main(){
 
     printf("p : %d\n", p); //6422000
     printf("p + 1 : %d\n", p + 1);//6422004
-    printf("*p + 1 : %d\n", *p + 1));//11
+    printf("*p + 1 : %d\n", *p + 1);//11
     printf("*(p + 1) : %d\n", *(p + 1));//20
     //p + 1 -> 6422004 p는 int형 포인터이기 때문에 p + 1은 p의 주소에서 
     //4바이트(즉, sizeof(int)) 만큼 증가한 주소를 가리킨다. 
@@ -22,9 +22,9 @@ int main(){
         printf("arr[%d] = %d\n", i, *(p + i));
     }
 
-    char test = 10;
-    char *q = &test;
-    char a = 1;
+    int test = 10;
+    int *q = &test;
+    int a = 1;
     printf("q : %d\n", q);
     printf("*q : %d\n", *q);
     printf("q + 1: %d\n", q + a);// 배열이 아니여도 한요소(pointer 변수 q가 char형이므로) 의 크기만큼 이동한다. 
