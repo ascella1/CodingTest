@@ -55,14 +55,14 @@ void initBoard(char board[SIZE][SIZE]) {
 }
 
 void printBoard(char board[SIZE][SIZE]) {
-    printf("    ");
+    printf("   ");// 열에 숫자를 나타낼때, 각 셀에 맞게끔 공백을 둔 것
     for (int i = 1; i <= SIZE; i++) {
         printf("%3d", i);
     }
     printf("\n");
 
     for (int i = 0; i < SIZE; i++) {
-        printf("%2d ", i + 1);
+        printf("%2d ", i + 1); // %2d -> 2자리보다 작으면 여백을 추가해서 2자리를 확보하는 것
         for (int j = 0; j < SIZE; j++) {
             printf("  %c", board[i][j]);
         }
@@ -71,7 +71,7 @@ void printBoard(char board[SIZE][SIZE]) {
 }
 
 int placeStone(char board[SIZE][SIZE], int x, int y, char stone) {
-    if (board[x][y] == '.') {
+    if (board[x][y] == '.') { // stone 이 아무것도 놓여있지 않은 . 상태일때 
         board[x][y] = stone;
         return 1;
     }
